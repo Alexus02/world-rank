@@ -1,0 +1,90 @@
+#sort{
+    height: 40px;
+    border-radius: 10px;
+      -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 300px;
+  background-color: var(--black);
+  color:var(--white);
+  border: none;
+  outline: none;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 400;
+  background-image: url("../assets/Expand_down.svg");
+  background-repeat: no-repeat;
+  background-position: 270px center;
+  margin: 10px;
+  border: solid 1px var(--ash);
+  font-weight: 500;
+}
+.Sorting{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 340px;
+}
+.first-section{
+ margin-bottom: 25px;
+}
+input[type="checkbox"]{
+  display: none;
+}
+.region>div>label{
+    margin-right: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+}
+.continents{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+input[type="checkbox"]:checked + label{
+    background-color: var(--ash);
+     transition: all 0.3s ease-in-out;
+}
+.check{
+    height: 25px;
+    width: 25px;
+    border: solid 2px var(--ash);
+    border-radius: 4px;
+}
+input[type="radio"]{
+    display: none;
+    display: absolute;
+}
+.UN-membership>label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.UN-membership>label>span{
+    margin: 5px;
+}
+input[type="radio"]:checked + label>.check{
+background-image: url("../assets/Done_round.svg");
+background-color: var(--blue);
+}
+.UN-membership{
+    margin-top: 10px;
+}
+@media screen and (max-width:440px){
+    .region>div>label{
+    margin-right: 8px;
+    padding: 10px 8px;
+    border-radius: 10px;
+    border: none;
+}
+    
+}
