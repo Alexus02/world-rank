@@ -2,7 +2,7 @@ import './App.css'
 import SearchBar from './components/SearchBar'
 import Sorting from './components/Sorting'
 import Results from './components/Results'
-import logo from './assets/logo.svg'
+import logo from './assets/Logo.svg'
 import { CountryProvider } from './components/CountryContext'
 
 function App() {
